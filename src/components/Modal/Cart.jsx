@@ -1,13 +1,13 @@
 import React from "react";
 import CartModal from "./CartModal";
-import Item from "../Carrito/Item";
+import Item from "./Item";
 import { RiShoppingCartLine } from "react-icons/ri";
 
 const Cart = (props) => {
   const { cart, deleteFromCart, clearCart } = props;
 
   return (
-    <div className="cart d-flex ">
+    <div className="cart d-flex justify-content-center">
       <button
         type="button"
         className="btn btn-primary"

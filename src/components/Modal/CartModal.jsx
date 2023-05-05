@@ -42,3 +42,4 @@ const CartModal = (props) => {
 };
 
 export default CartModal;
+
