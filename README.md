@@ -20,13 +20,13 @@ Texto
 Paleta de colores
 
 Requerimientos técnicos
--La aplicación deberá estar dividida en componentes funcionales
--Los estilos deben estar hechos con el approach de Mobile First
--El diseño debe ser responsive
--La información será consumida de un backend mockeado con json-server
--Para las consultas al backend, se deberá utilizar la librería axios
--Para facilitar los estilos, se pueden utilizar librerías FrontEnd de CSS (Se utiliza Bootstrap
--Requerimientos funcionales
--Al presionar el botón de compra, se deberá abrir un Modal para confirmar la compra
--Al confirmar la compra, el número items en el carrito deberá aumentar en uno.
--La galería de imágenes de Instagram deberá desplegar al menos diez imagenes en un carrusel
+- La aplicación deberá estar dividida en componentes funcionales
+- Los estilos deben estar hechos con el approach de Mobile First
+- El diseño debe ser responsive
+- La información será consumida de un backend mockeado con json-server
+- Para las consultas al backend, se deberá utilizar la librería axios
+- Para facilitar los estilos, se pueden utilizar librerías FrontEnd de CSS (Se utiliza Bootstrap
+- Requerimientos funcionales
+- Al presionar el botón de compra, se deberá abrir un Modal para confirmar la compra
+- Al confirmar la compra, el número items en el carrito deberá aumentar en uno.
+- La galería de imágenes de Instagram deberá desplegar al menos diez imagenes en un carrusel
