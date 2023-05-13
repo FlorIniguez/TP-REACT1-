@@ -14,6 +14,7 @@ const CardsLista = ({ data }) => {
   //descuento
   const precioDescuento = precio - (precio * porcentajedescuento) / 100;
   const precioDescuentoRedondeado = Math.round(precioDescuento);
+  const precioFinal = descuento ? precioDescuentoRedondeado : precio;
   return (
     <div className="contenedor-productos" style={{ width: "15rem" }}>
       <Carousel interval={null} variant="dark" indicators={false}>

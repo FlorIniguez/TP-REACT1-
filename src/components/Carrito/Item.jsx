@@ -5,9 +5,11 @@ import "./item.css";
 
 const Item = ({data}) => {
   const {deleteFromCart, addToCart } = useContext(ProductosContext);
-  const {id, nombre, precio,imagenes,cantidad, nombreCorto} = data;
+  const {id, nombre, precio,imagenes,cantidad, nombreCorto, porcentajedescuento, descuento} = data;
 
-
+// Cálculo del precio final con descuento
+const precioDescuento = precio - (precio * porcentajedescuento) / 100;
+const precioFinal = descuento ? precioDescuento * cantidad : precio * cantidad;
   return (
     <Row className="container flex-column flex-sm-row justify-content-center align-items-center w-100">
 
@@ -39,7 +41,7 @@ const Item = ({data}) => {
         </Button>
       </div>
       <div className="col-3 text-center">
-        <h5 className="texto-modal">$ {precio * cantidad}</h5>
+        <h5 className="texto-modal">$ {precioFinal * cantidad}</h5>
       </div>
       <div className="col-1">
         <button
