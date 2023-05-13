@@ -44,7 +44,7 @@ const CardsLista = ({ data }) => {
 
           {descuento ? (
             <>
-              <span className="descuento"> %{porcentajedescuento} OFF </span>
+              <span className="descuento"> {porcentajedescuento}%OFF </span>
               <p className="fw-bold oferta"> ${precioDescuentoRedondeado} </p>
             </>
           ) : (

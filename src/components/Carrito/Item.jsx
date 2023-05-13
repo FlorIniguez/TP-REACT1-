@@ -9,7 +9,8 @@ const Item = ({data}) => {
 
 // Cálculo del precio final con descuento
 const precioDescuento = precio - (precio * porcentajedescuento) / 100;
-const precioFinal = descuento ? precioDescuento * cantidad : precio * cantidad;
+const precioDescuentoRedondeado = Math.round(precioDescuento);
+const precioFinal = descuento ? precioDescuentoRedondeado : precio;
   return (
     <Row className="container flex-column flex-sm-row justify-content-center align-items-center w-100">
 
