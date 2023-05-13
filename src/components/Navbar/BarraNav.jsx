@@ -16,6 +16,21 @@ function BarraNav() {
     <>
       <Navbar className="barra-nav" collapseOnSelect expand="lg" variant="dark">
         <Container>
+          
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to="/Productos">
+                Productos
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Ofertas">
+                Ofertas{" "}
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Categorias">
+                Categorias
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
           <Navbar.Brand as={Link} to="/">
             <img
               src={logoAncho}
@@ -32,20 +47,6 @@ function BarraNav() {
             />
           </NavbarBrand>
 
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link as={Link} to="/Productos">
-                Productos
-              </Nav.Link>
-              <Nav.Link as={Link} to="/Ofertas">
-                Ofertas{" "}
-              </Nav.Link>
-              <Nav.Link as={Link} to="/Categorias">
-                Categorias
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
