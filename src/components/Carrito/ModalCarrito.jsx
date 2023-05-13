@@ -8,7 +8,7 @@ import "./carrito.css";
 import carritoBoton from './carritoBoton.png'
 
 function ModalCarrito() {
-  const { carrito, productos, deleteFromCart, addToCart, clearCart } =
+  const { carrito, productos, deleteFromCart,clearCart, descuento, precioDescuento } =
     useContext(ProductosContext);
 
   const handleClose = () => setShowCarrito(false);
@@ -17,20 +17,24 @@ function ModalCarrito() {
   const [showCarrito, setShowCarrito] = useState(false);
   const [totalCarrito, setTotalCarrito] = useState(0);
   const [totalPrecios, setTotalPrecios] = useState(0);
-
+  
   useEffect(() => {
-    // Calcula la cantidad total de productos y precios en el carrito
     let totalCantidad = 0;
-    let totalPrecio = 0;
+    let totalPrecios = 0;
+  
     carrito.forEach((item) => {
       totalCantidad += item.cantidad;
       const producto = productos.find((p) => p.id === item.id);
       if (producto) {
-        totalPrecio += producto.precio * item.cantidad;
+        const precio = producto.descuento
+          ? Math.floor(producto.precio - (producto.precio * producto.porcentajedescuento) / 100)
+          : producto.precio;
+        totalPrecios += precio * item.cantidad;
       }
     });
+  
     setTotalCarrito(totalCantidad);
-    setTotalPrecios(totalPrecio);
+    setTotalPrecios(totalPrecios);
   }, [carrito, productos]);
 
   return (

@@ -27,9 +27,13 @@ function CarouselOfertas() {
       setShowModal(false);
     }
   };
+  
+  const items = productosFiltrados.map(({ id, nombreCorto, precio, imagenes, descuento, porcentajedescuento }) => {
+    const precioDescuento = precio - (precio * porcentajedescuento) / 100;
+    const precioDescuentoRedondeado = Math.round(precioDescuento);
+    const precioFinal = descuento ? precioDescuentoRedondeado : precio;
 
-  const items = productosFiltrados.map(
-    ({ id, nombreCorto, precio, imagenes }) => (
+    return (
       <div key={id} className="card-oferta">
         <img
           className="product-img w-100"
@@ -37,16 +41,22 @@ function CarouselOfertas() {
           alt={nombreCorto}
         />
         <p className="texto-ofertaCarousel nombre">{nombreCorto}</p>
-        <p className="texto-ofertaCarousel fw-bold">OFERTA $ {precio}</p>
+        <p className="texto-ofertaCarousel fw-bold">OFERTA $ {precioFinal}</p>
         <button
           className="btn-oferta"
-          onClick={() => handleShowModal({ id, nombreCorto, precio })}
+          onClick={() =>
+            handleShowModal({
+              id,
+              nombreCorto,
+              precio: precioFinal,
+            })
+          }
         >
           COMPRAR
         </button>
       </div>
-    )
-  );
+    );
+  });
 
   return (
     <div className="container-ofertas">
