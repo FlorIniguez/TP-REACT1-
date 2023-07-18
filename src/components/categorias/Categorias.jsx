@@ -21,15 +21,15 @@ const Categorias = () => {
       <h5 className="fondo-categoria">CATEGORIAS</h5>
     <div className="categorias container-fluid py-2">
       
-      <Card className="my-3  container-fluid contenedor-cat-individual" onClick={() => seleccionarCategoria("Smartphones")}>
+      <Card className="my-3 container-fluid contenedor-cat-individual" onClick={() => seleccionarCategoria("Smartphones")}>
         <h5 className="texto-categoria"> SMARTHPHONES </h5>
         <img className="img-categoria" src={smartphones} alt="Smarthphones" />
       </Card>
-      <Card className="my-3  container-fluid contenedor-cat-individual" onClick={() => seleccionarCategoria("Smart watch")}>
+      <Card className="my-3 container-fluid contenedor-cat-individual" onClick={() => seleccionarCategoria("Smart watch")}>
         <h5 className="texto-categoria"> SMART WATCH </h5>
         <img className="img-categoria" src={relojes} alt="Smarth watch" />
       </Card>
-      <Card className="my-3  container-fluid  contenedor-cat-individual" onClick={() => seleccionarCategoria("Cafeteras")}>
+      <Card className="my-3 container-fluid  contenedor-cat-individual" onClick={() => seleccionarCategoria("Cafeteras")}>
         <h5 className="texto-categoria"> CAFETERAS </h5>
         <img className="img-categoria" src={cafetera} alt="Cafeteras" />
       </Card>

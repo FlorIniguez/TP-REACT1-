@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
-import ModalCarrito from "../Carrito/ModalCarrito";
+import ModalCarrito from "../Carrito/store/ModalCarrito";
 import { NavbarBrand, Nav, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logoAncho from "../../assets/logoAncho.png";
@@ -20,6 +20,9 @@ function BarraNav() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
+            <Nav.Link as={Link} to="/">
+                Inicio
+              </Nav.Link>
               <Nav.Link as={Link} to="/Productos">
                 Productos
               </Nav.Link>
@@ -29,13 +32,14 @@ function BarraNav() {
               <Nav.Link as={Link} to="/Categorias">
                 Categorias
               </Nav.Link>
+              
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Brand as={Link} to="/">
+          <Navbar.Brand as={Link} to="/"  className="logo-none">
             <img
               src={logoAncho}
               alt="logo"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top logo-nav"
               style={{ height: "4rem" }}
             />
           </Navbar.Brand>

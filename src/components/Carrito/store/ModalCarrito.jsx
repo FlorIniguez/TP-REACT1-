@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import { Modal as BootstrapModal } from "react-bootstrap";
 import Item from "./Item";
 import { RiShoppingCartLine } from "react-icons/ri";
-import { ProductosContext } from "../Contexto/ContextProducts";
+import { ProductosContext } from "../../Contexto/ContextProducts";
 import "./carrito.css";
 import carritoBoton from './carritoBoton.png'
 
