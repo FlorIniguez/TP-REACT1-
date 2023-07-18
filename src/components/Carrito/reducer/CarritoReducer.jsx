@@ -1,4 +1,4 @@
-import { TYPES } from "./action";
+import { TYPES } from "../actions/action";
 
 export function carritoReducer(state, action) {
   switch (action.type) {

@@ -9,7 +9,7 @@ export const Footer = () => {
         <footer className="row text-center row-cols-1 row-cols-sm-4 row-cols-md-6 py-4 mt-3">
           <div className="col mb-2">
             <a href="#" className="d-flex justify-content-center mb-3  ">
-              <img className="bi me-2 w-100" src={logoAncho}></img>
+              <img className="bi me-2 w-100 logo-footer" src={logoAncho}></img>
             </a>
             <p className="text-center">Derechos reservados</p>
             <p className="text-center">&copy; React Tech 2023</p>

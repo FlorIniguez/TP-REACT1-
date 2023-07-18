@@ -13,9 +13,10 @@
 /*Imagen*/
 .img-home {
   justify-content: center;
+  align-items: center;
 }
 .img-celu {
-  width: 80%;
+  width: 100%;
   transition: transform 0.2s ease-in-out;
 }
 .img-celu:hover {
@@ -40,7 +41,12 @@
 
 /*medias queryes*/
 @media (max-width: 768px) {
-    .titulo-home {
-      font-size: 2.2rem;
-    }
+  .home {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline;
   }
+}
+

@@ -38,7 +38,7 @@
   white-space: nowrap;
 }
 /*img*/
-.product-image {
+.product-img {
   width: 100%;
   height: 16em;
   object-fit: cover;
@@ -61,4 +61,8 @@
   opacity: 0.7;
 }
 
-
+  @media (min-width: 600px) {
+    .logo-nav{
+      width: 15rem; 
+    }
+  }

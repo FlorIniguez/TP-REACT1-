@@ -1,4 +1,7 @@
 # TP-REACT1
+En terminales
+json-server --watch src/assets/db.json
+npm run dev
 Proyecto grupal Front end, React realizado para la Academia Numen.
 
 Requerimientos de Diseño

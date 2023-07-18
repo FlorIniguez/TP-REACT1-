@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ProductosContext } from "../Contexto/ContextProducts";
+import { ProductosContext } from "../../Contexto/ContextProducts";
 import { Row, Button } from "react-bootstrap";
 import "./item.css";
 

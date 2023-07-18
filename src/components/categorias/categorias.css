@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   border-radius: 30px;
   height: 15rem;
   width: 12rem;
@@ -52,9 +52,24 @@
 .none {
   display: none;
 }
+/* Media queries */
+
+@media (max-width: 640px) {
+  .categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-cat-individual {
+    width: 80%;
+  }
+}
+
 /* Media query para pantallas más grandes */
 @media (min-width: 1044px) {
   .contenedor-cat-individual {
-    width: 20rem; 
+    width: 20rem;
   }
 }
+

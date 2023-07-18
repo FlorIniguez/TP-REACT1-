@@ -16,3 +16,10 @@ a:active {
 .footer {
   margin: 0 auto;
 }
+@media (max-width: 580px) {
+  .logo-footer {
+   width: 20%;
+  }
+
+ 
+}

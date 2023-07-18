@@ -1,7 +1,7 @@
 import { createContext, useReducer, useEffect } from "react";
 import axios from "axios";
-import { TYPES } from "../Carrito/action";
-import { carritoReducer } from "../Carrito/CarritoReducer";
+import { TYPES } from "../Carrito/actions/action";
+import { carritoReducer } from "../Carrito/reducer/CarritoReducer";
 
 
 export const ProductosContext = createContext();

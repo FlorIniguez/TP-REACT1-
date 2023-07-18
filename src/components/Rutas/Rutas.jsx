@@ -5,8 +5,7 @@ import CarouselOfertas from "../ofertas/CarouselOfertas";
 import Productos from '../Carrito/Productos'
 import Footer from "../Footer/Footer";
 import Categorias from "../categorias/Categorias";
-import ModalCarrito from "../Carrito/ModalCarrito";
-import ProductosProvider from "../Contexto/ContextProducts";
+import ModalCarrito from "../Carrito/store/ModalCarrito";
 import Home from "../Home/Home";
 const Rutas = () => {
   return (
