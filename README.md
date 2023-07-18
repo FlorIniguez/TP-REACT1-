@@ -2,7 +2,8 @@
 En terminales
 - json-server --watch src/assets/db.json
 - npm run dev
-Proyecto grupal Front end, React realizado para la Academia Numen.
+  
+-**Proyecto grupal Front end, React realizado para la Academia Numen.**
 
 Requerimientos de Diseño
 Se realizará el diseño tomando de referencia el siguiente diseño en Figma: https://www.figma.com/file/ptZy1a106K1UbSFh1O4v93/Food-store-template-(Community)?node-id=0-1
